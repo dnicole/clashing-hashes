@@ -8,3 +8,9 @@ get '/' do
   @show_description = false
    erb :index
 end 
+
+# Post request for /twitter
+post '/twitter' do
+  "Your form has been submitted."
+end
+
