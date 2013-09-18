@@ -11,6 +11,11 @@ end
 
 # Post request for /twitter
 post '/twitter' do
-  "Your form has been submitted."
+  @firstIn = params[:first_hash]
+  @secondIn = params[:second_hash]
+  
+  
+  
+  erb :results
 end
 
