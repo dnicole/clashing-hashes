@@ -28,11 +28,11 @@ body {
 .WuTang {
 	margin-left: auto;
     margin-right: auto;
-    background-color: #6B1BF7;
     border-radius: 30px;
 }
 
 p.bod {
+	text-align: center;
 	background-color: #8340F7;
 	border-radius: 30px;
 	padding: 10px;
