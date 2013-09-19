@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="application.css" type="text/css" />
-		<title>bitches.</title>
-		<h1>My name is <%= @name %></h1>
+		<title>hash fight!</title>
+		<h1>Hello, <%= @name %>!</h1>
 	  <% if @show_description %>
 	  <p>This is my description</p>
 		<% end %>
@@ -10,14 +10,17 @@
 
   <body>
   	<form action="/twitter" method="post">
-			<div>
+			<div class="form">
 				<p>Enter two hashtags to compare:</p>
-				<label class="enter-one">Hashtag 1! </label>
-				<input name="first_hash" id="" type="text"/> 
-			</div> 
-			<label class="enter-two">Hashtag 2! </label>
-				<input name="second_hash" id="" type="text"/>			    
-				<input id="saveForm" class="button_text" type="submit" value="Submit" />
+				<div>
+					<label class="enter-one">Hashtag 1! </label>
+				  <input name="first_hash" id="" type="text"/>  
+			  </div>
+			  <div>
+				  <label class="enter-two">Hashtag 2! </label>
+					<input name="second_hash" id="" type="text"/>			    
+					<input id="saveForm" class="button_text" type="submit" value="Submit" />
+				</div>
 			</div>
 	  </form>
 

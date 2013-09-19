@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 require 'sinatra'
 require 'sinatra/reloader'
+require 'twitter'
 
 get '/' do
   @name = 'Nicole' 
@@ -14,8 +15,8 @@ post '/twitter' do
   @firstIn = params[:first_hash]
   @secondIn = params[:second_hash]
   
-  
-  
+
+
   erb :results
 end
 
