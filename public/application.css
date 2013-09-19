@@ -15,13 +15,25 @@ div.form {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+input {
+	margin-left: auto;
+    margin-right: auto;
+    background-color: #9760F7;
+}
 
 body {
 	background-color: #BD9DF5;
 }
 
+.WuTang {
+	margin-left: auto;
+    margin-right: auto;
+    background-color: #6B1BF7;
+    border-radius: 30px;
+}
+
 p.bod {
-	background-color: #9E6DF2;
+	background-color: #8340F7;
 	border-radius: 30px;
 	padding: 10px;
 }
