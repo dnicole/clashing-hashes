@@ -14,8 +14,16 @@ describe FollowerClash::Comparer do
       end
     end
 
-    context 'when user 1 and user 2 have the same number of followers'
-      it 'should return ...'
+    context 'when user 1 and user 2 have the same number of followers' do
+      it 'should return a tie' do
+        user1 = double("user1")
+        user2 = double("user2")
+
+        allow(user1).to receive(:followers).and_return(10)
+        allow(user2).to receive(:followers).and_return(10)
+
+        expect(FollowerClash::Comparer.new(user1, user2).compare).to eq('it\'s a tie!')
+      end
     end
   end
 end
