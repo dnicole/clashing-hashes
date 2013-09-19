@@ -32,7 +32,7 @@ describe FollowerClash::Comparer do
         allow(user1).to receive(:followers).and_return(10)
         allow(user2).to receive(:followers).and_return(10)
 
-        expect(FollowerClash::Comparer.new(user1, user2).compare).to eq('it\'s a tie!')
+        expect(FollowerClash::Comparer.new(user1, user2).compare).to eq("it\'s a tie!")
       end
     end
   end

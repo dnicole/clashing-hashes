@@ -24,9 +24,16 @@ module FollowerClash
   end
 
   class Comparer
+    attr_reader :user1, :user2
     def initialize(user1, user2)
       @user1 = user1
       @user2 = user2
+    end
+
+    def compare()
+      return "it's a tie!" if @user1.followers == @user2.followers
+      return user1 if @user1.followers > @user2.followers
+      return user2 if @user1.followers < @user2.followers
     end
   end
 
