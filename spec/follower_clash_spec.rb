@@ -1,5 +1,15 @@
 require_relative '../lib/follower_clash'
 
+describe FollowerClash::User do
+  describe '#followers' do
+    it 'returns the number of followers from the Twitter API' do
+      Twitter::Client.stub_chain(:new, :configure, :user, :followers_count).and_return(20)
+
+      expect(FollowerClash::User.new('ornellasmike').followers).to eq(20)
+    end
+  end
+end
+
 describe FollowerClash::Comparer do
   describe '#compare' do
     context 'when user 1 has more followers' do
