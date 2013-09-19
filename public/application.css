@@ -25,15 +25,14 @@ body {
 	background-color: #BD9DF5;
 }
 
-.WuTang {
+.WuTang, h3, p.bod {
 	margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
+    background-color: #8340F7;
+    text-align: center;
 }
 
 p.bod {
-	text-align: center;
-	background-color: #8340F7;
-	border-radius: 30px;
 	padding: 10px;
 }
